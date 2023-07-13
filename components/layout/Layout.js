@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Layout = ({children}) => {
      return (
-          <>
+          <div>
                <header className={styles.header}>
                     <Link href="/">
                          <h2>JAFARPOUR MOTORS</h2>
@@ -19,7 +19,7 @@ const Layout = ({children}) => {
                     </a>
                     <p>Next.js Projects | Jafarpour Motors  &copy;</p>
                </footer>
-          </>
+          </div>
      )
           
      
