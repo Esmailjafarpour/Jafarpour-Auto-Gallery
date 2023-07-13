@@ -43,6 +43,6 @@
    @media (max-width: 600px) {
      .header {
        width: 320px;
-       color : red;
+       color : rgb(3, 152, 147);
      }
    }
