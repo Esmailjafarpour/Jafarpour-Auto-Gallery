@@ -5,9 +5,18 @@ import Model from "../icons/Model";
 import Money from "../icons/Money";
 import Road from "../icons/Road";
 import Calender from "../icons/Calender";
+import Back from "../icons/Back";
+import { useRouter } from "next/router";
+
 
 const CarDetail = (props) => {
+
      const {id , name , model , year , distance , location , image , price , description} = props;
+     const router = useRouter();
+
+     const backHandler = () => {
+          router.back()
+     }
 
      return (
           <div className={styles.container}>
@@ -56,6 +65,11 @@ const CarDetail = (props) => {
                     </div>
                </div>
                <button className={styles.button}>Buy</button>
+               <div className={styles.back} onClick={backHandler}>
+                    <Back/>
+                    <p>back</p>
+               </div>
+
           </div>
      );
 }
